@@ -1,0 +1,38 @@
+/*.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #a9a9a9;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  opacity: .35;
+
+}*/
+
+.top-background-image{
+  /*background-image: image("./img/background/blueprints.jpg");*/
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+
+.main-header {
+  /*height:65px;*/
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.7);
+  align-items: center;
+  padding: 20px 20px;  /* 0 20px 0 20px */
+  z-index: 2;
+}
+
+.header-logo {
+
+}
