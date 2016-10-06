@@ -1,0 +1,9 @@
+.background-image {
+  height: calc(100vh - 101px);
+  width: calc(100vw - 22px);
+  /*background-size: calc(100vh - 110px);*/
+  background-position: center center;
+  margin-top: -10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
