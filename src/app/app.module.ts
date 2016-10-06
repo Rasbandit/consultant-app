@@ -24,7 +24,7 @@ import { ClientNotesItemComponent } from './consview/clients/client-notes/client
 import { FixedExpensesComponent } from './consview/fixed-expenses/fixed-expenses.component';
 
 // mini view
-import { HeaderComponent } from './publicview/header/header.component';
+import { HeaderComponent } from './shared/header/header.component';
 
 
 //routers

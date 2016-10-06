@@ -1,16 +1,14 @@
 import { Component } from '@angular/core';
 // import { Router, RouterModule} from '@angular/router';
 
-import { HeaderComponent } from './publicview/header/header.component';
+import { HeaderComponent } from './shared/header/header.component';
 import { HomeComponent } from './publicview/home/home.component';
 import { AboutComponent } from './publicview/about/about.component';
 import { ProjectsComponent } from './publicview/projects/projects.component';
 import { ContactComponent } from './publicview/contact/contact.component';
-import { ClientListComponent } from './consview/client-list/client-list.component';
-import { ClientInfoComponent } from './consview/client-info/client-info.component';
-import { ClientAddNoteComponent } from './consview/client-add-note/client-add-note.component';
-import { ClientEditNoteComponent } from './consview/client-edit-note/client-edit-note.component';
-import { FixedExpensesComponent } from './consview/fixed-expenses/fixed-expenses.component';
+// import { ClientListComponent } from './consview/client-list/client-list.component';
+//
+// import { FixedExpensesComponent } from './consview/fixed-expenses/fixed-expenses.component';
 
 // import { MaxfieldGroupRoutingModule } from './app-routing.module';
 
