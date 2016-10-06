@@ -1,20 +1,28 @@
 /*@media (min-width: 1001px) { */
 
   .navbar-default {
+    padding:20px ;
     height: 100px;
   }
 
+.navbar-brand {
+  width:300px;
+  padding: 0 !important;
+}
+
+.navbar-brand img {
+  width:100%;
+}
   .logo-nav {
-    height: 100px;
+    /*height: 100px;*/
     padding: 0px;
     margin: 0px;
-    top: 0px;
-    left: 0px;
+    /*top: 0px;
+    left: 0px;*/
   }
 
   .navbar-nav {
     font-size: 30px;
-    padding-top: 20px;
     padding-left: 15%;
   }
 /*
