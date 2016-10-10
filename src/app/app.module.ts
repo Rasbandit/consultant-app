@@ -14,6 +14,19 @@ import { ClientAddNoteComponent } from './consview/client-add-note/client-add-no
 import { ClientEditNoteComponent } from './consview/client-edit-note/client-edit-note.component';
 import { FixedExpensesComponent } from './consview/fixed-expenses/fixed-expenses.component';
 
+<<<<<<< HEAD
+=======
+// mini view
+import { HeaderComponent } from './publicview/header/header.component';
+
+
+//routers
+import { MaxfieldGroupRoutingModule } from './app-routing.module';
+
+
+
+
+>>>>>>> parent of 0775b87... moved header into shared folder
 @NgModule({
   declarations: [
     AppComponent,
