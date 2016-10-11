@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Note, ClientNotesService } from '../../consview';
+import { Note } from '../client-notes/note';
+import { ClientNotesService } from '../client-notes/client-notes.service';
 
 @Component({
   selector: 'app-client-notes',
@@ -16,10 +17,10 @@ export class ClientNotesComponent implements OnInit {
   note = new Note('dummy note', 93);
   note2 = new Note('Meeting', 2)
 
-  // constructor(private clientNotesService: ClientNotesService) { }
+  constructor(private clientNotesService: ClientNotesService) { }
 
   ngOnInit() {
-    // this.notes = this.clientNotesService.getNotes();
+    this.notes = this.clientNotesService.getNotes();
   }
 
 }

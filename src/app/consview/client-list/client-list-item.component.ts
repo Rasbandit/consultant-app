@@ -1,20 +1,16 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
-import { Client } from '../../consview';
+import { Client } from '../client-list/client';
 
 @Component({
   selector: 'app-client-list-item',
   templateUrl: './client-list-item.component.html',
   styleUrls: ['./client-list-item.component.css']
 })
-export class ClientListItemComponent implements OnInit {
+export class ClientListItemComponent {
 
   @Input() client: Client;
-  clientId: number;
+  @Input() clientId: number;
 
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }

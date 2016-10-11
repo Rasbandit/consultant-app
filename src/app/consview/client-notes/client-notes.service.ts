@@ -1,4 +1,4 @@
-import { Note } from '../../consview';
+import { Note } from '../client-notes/note';
 
 export class ClientNotesService {
 

@@ -17,13 +17,13 @@
     <ul class="nav navbar-nav">
       <li class=" first-nav">  <!-- class = active -->
         <!-- <a  [routerLink]="['/', rLink1]" >{{link1}} --> <!-- [routerLink]="['/about']" -->
-        <a  [routerLink]="['/clients']" >Client List  <!-- [routerLink]="['/about']" -->
+        <a  [routerLink]="['/']" >Client List  <!-- [routerLink]="['/about']" -->
           <!-- <span class="sr-only">(current)</span> -->
         </a>
       </li>
       <li class= "second-nav">
         <!-- <a [routerLink]="['/', rLink2]">{{link2}} -->
-        <a [routerLink]="['/consview/expenses']">Fixed Expenses
+        <a [routerLink]="['/expenses']">Fixed Expenses
       </a>
 
       </li>
@@ -46,10 +46,10 @@
     <ul class="nav navbar-nav navbar-right">
       <li>
       <!-- <button class= "login-icon btn btn-xs" type="button" name="login" [routerLink]="'/' + rlinkLogin"> -->
-      <button class= "login-icon btn btn-xs" type="button" name="login" [routerLink]="['/list']">
+      <a class= "login-icon btn btn-xs" type="button" name="login" [routerLink]="['/list']">
         <img src="../../../../img/icons/enterprise-icon.png" alt="" />
         <!-- <img [src]="login" alt="" /> -->
-      </button>
+      </a>
       </li>
 
     </ul>

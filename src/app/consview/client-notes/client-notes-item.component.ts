@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { Note } from '../../consview';
+import { Note } from '../client-notes';
 
 @Component({
   selector: 'app-client-notes-item',

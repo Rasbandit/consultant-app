@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 
-import { Client, Note } from '../consview';
+import { Note } from './client-notes/note';
+import { ClientNotesService } from './client-notes/client-notes.service';
+import { Client } from './client-list/client';
+
 
 @Injectable()
 export class ClientService {
@@ -24,6 +27,10 @@ export class ClientService {
 
   getClients() {
     return this.clients;
+  }
+
+  getClient(id: number) {
+    return this.clients[id];
   }
 
 }

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ConsViewHeaderComponent, ClientListComponent, ClientDetailComponent, Client,  ClientNotesService } from '../consview';
+import { ClientDetailComponent } from './client-detail';
 // ClientService,
+import { ConsViewHeaderComponent } from './cons-view-header';
+import { ClientNotesService } from './client-notes';
+import { ClientListComponent, Client } from './client-list';
 
 @Component({
   selector: 'app-consview',

@@ -1,12 +1,17 @@
 <app-cons-view-header></app-cons-view-header>
+<!-- <router-outlet></router-outlet> -->
+
+
 <div class="row">
   <div class="col-md-5">
-    <app-client-list (clientSelected)="selectedClient = $event"></app-client-list>
+    <app-client-list></app-client-list>
   </div>
   <div class="col-md-7">
-    <app-client-detail [selectedClient]="selectedClient"></app-client-detail>
+    <router-outlet></router-outlet>
   </div>
 </div>
+
+<!-- <app-client-detail [selectedClient]="selectedClient"></app-client-detail> -->
 <!-- <div class="container">
   <app-client-notes></app-client-notes>
 </div> -->
