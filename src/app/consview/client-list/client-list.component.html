@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-xs-12">
+    <a href="#" class="btn btn-success">New Client</a>
+    <!-- <button class="btn btn-success" (click)="onAddToNotes()">Add New Note</button> -->
+    <button class="btn btn-primary">Edit</button>
+    <button class="btn btn-danger">Delete</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <app-client-list-item
+        *ngFor="let client of clients"
+        [client]="client"
+        (click)="onSelected(client)"></app-client-list-item>
+      <!-- <app-client-list-item [client]="client"></app-client-list-item>
+      <app-client-list-item [client]="client2"></app-client-list-item> -->
+    </ul>
+  </div>
+</div>

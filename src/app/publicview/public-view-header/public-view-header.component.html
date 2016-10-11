@@ -1,0 +1,58 @@
+<nav class="navbar navbar-default">
+  <div class="navbar-header">
+    <!-- <a class="navbar-brand" [routerLink]="['/', rlinkBanding]"> -->
+    <a class="navbar-brand" [routerLink]="['/']">
+    <!-- <a class="navbar-brand" [routerLink]="['/', rlinkBanding]"> -->
+       <img src="../../../../img/logo/logo-figma.svg" alt="Main logo" class="logo-nav">
+       <!-- <img [src]="branding" alt="Main logo" class="logo-nav"> -->
+     </a>
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <!-- <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span> -->
+    </button>
+  </div>
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li class=" first-nav">  <!-- class = active -->
+        <!-- <a  [routerLink]="['/', rLink1]" >{{link1}} --> <!-- [routerLink]="['/about']" -->
+        <a  [routerLink]="['/about']" >About  <!-- [routerLink]="['/about']" -->
+          <!-- <span class="sr-only">(current)</span> -->
+        </a>
+      </li>
+      <li class= "second-nav">
+        <!-- <a [routerLink]="['/', rLink2]">{{link2}} -->
+        <a [routerLink]="['/projects']">Projects
+      </a>
+
+      </li>
+      <li class= "third-nav">
+        <!-- <a [routerLink]="[rLink3]">{{link3}} -->
+        <a [routerLink]="['/contact']">Contact
+      </a>
+
+      <li class= "test-nav">
+        <!-- <a (click)="onNavigate()"> Test</a> -->
+        <a [routerLink]="['/consview/clients']"> Clients </a>
+
+
+      </li>
+
+    </ul>
+
+
+
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+      <!-- <button class= "login-icon btn btn-xs" type="button" name="login" [routerLink]="'/' + rlinkLogin"> -->
+      <button class= "login-icon btn btn-xs" type="button" name="login" [routerLink]="['/list']">
+        <img src="../../../../img/icons/enterprise-icon.png" alt="" />
+        <!-- <img [src]="login" alt="" /> -->
+      </button>
+      </li>
+
+    </ul>
+  </div>
+
+</nav>

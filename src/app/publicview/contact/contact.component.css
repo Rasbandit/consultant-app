@@ -1,0 +1,52 @@
+.background-img {
+  /*background-image: url("../../../../img/background/blueprints-compressed.jpg");*/
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+  position: relative;
+}
+
+.contact-group {
+  background-color: black;
+  width: 600px;
+  color: white;
+  font-size: 20px;
+  opacity: .8;
+  padding-left: 25px;
+  margin-left: 25px;
+  z-index: 1;
+  position: absolute;
+  top: 25px;
+}
+
+.email-group {
+
+  left: 25px;
+}
+
+.bid-group {
+  right: 25px;
+}
+
+.input-group {
+  width: 450px;
+  padding-top: 10px;
+  margin-left: 25px;
+  opacity: 1;
+}
+
+
+
+
+
+#contact-email-body {
+  width: 450px;
+  padding-top: 10px;
+  margin-left: 25px;
+  opacity: 1;
+}
+
+.submit-btn {
+  color: blue;
+  padding-top: 15px;
+}
