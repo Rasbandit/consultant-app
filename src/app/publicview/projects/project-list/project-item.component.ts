@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { Project } from '../../publicview';
+import { Project } from '../project';
 
 @Component({
   selector: 'app-project-item',
