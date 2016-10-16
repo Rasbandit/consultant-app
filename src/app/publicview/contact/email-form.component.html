@@ -1,0 +1,38 @@
+<div class="email-group contact-group">
+  <form (ngSubmit)="onSubmit(emailForm.value)" #emailForm="ngForm">
+    <div class="input-group email-input-group">
+      <!-- <span class="input-group-addon" id="basic-addon1">Name</span> -->
+      <input type="text" class="form-control email-input" placeholder="Name" aria-describedby="basic-addon1" ngModel name="contactName">
+    </div>
+  <!-- </form> -->
+
+  <!-- <form> -->
+    <div class="input-group email-input-group">
+      <!-- <span class="input-group-addon" id="basic-addon1">Email</span> -->
+      <input type="text" class="form-control email-input" placeholder="Email" aria-describedby="basic-addon1" ngModel name="contactEmail">
+    </div>
+  <!-- </form> -->
+
+  <!-- <form> -->
+    <div class="input-group email-input-group">
+      <!-- <span class="input-group-addon" id="basic-addon1">Phone</span> -->
+      <input type="text" class="form-control email-input" placeholder="Phone" aria-describedby="basic-addon1" ngModel  name="contactPhone">
+    </div>
+
+  <!-- </form> -->
+
+  <!-- <form> -->
+    <div class="input-group email-input-group">
+      <!-- <span class="input-group-addon" id="basic-addon1">Subject</span> -->
+      <input type="text" class="form-control email-input" placeholder="Subject" aria-describedby="basic-addon1" ngModel name="contactSubject">
+    </div>
+  <!-- </form> -->
+
+    <div class="form-group email-input-group">
+      <!-- <label for="body">Body:</label> -->
+      <textarea class="form-control" rows="5" id="contact-email-body" placeholder="Message:" ngModel name="contactBody"></textarea>
+    </div>
+
+    <div class="submit-btn btn btn-success">Submit</div>
+  </form>
+</div>

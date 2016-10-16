@@ -3,39 +3,25 @@ import {Routes, RouterModule} from '@angular/router';
 
 import { PublicviewComponent, PublicRoutes, HomeComponent, AboutComponent, ProjectsComponent, ContactComponent } from './publicview';
 
+import { ProjectRoutes } from './publicview/projects/project.routes';
+import { ContactRoutes } from './publicview/contact/contact.routes';
 
-import { ConsRoutes } from './consview/cons.routes';
+
 
 //Components
 import { ConsviewComponent } from './consview/consview.component';
-
-
-import { ClientListComponent } from './consview/client-list/client-list.component';
-import { ClientListItemComponent } from './consview/client-list/client-list-item.component';
-import { ClientDetailComponent } from './consview/client-detail/client-detail.component';
-import { ClientEditComponent } from './consview/client-edit/client-edit.component';
-import { ClientNotesComponent } from './consview/client-notes/client-notes.component';
-import { ClientNotesItemComponent } from './consview/client-notes/client-notes-item.component';
-
-import { ClientStartComponent } from './consview/client-start/client-start.component';
-import { ConsViewHeaderComponent } from './consview/cons-view-header/cons-view-header.component';
 import { FixedExpensesComponent } from './consview/fixed-expenses/fixed-expenses.component';
+// import { ClientNotesComponent } from './consview/client-detail/client-notes/client-notes.component';
+import { ConsRoutes } from './consview/cons.routes';
 
 const APP_ROUTES: Routes = [
     { path: '', component: HomeComponent},
-    { path: 'projects', component: ProjectsComponent},
+    { path: 'projects', component: ProjectsComponent, children: ProjectRoutes},
     { path: 'about', component: AboutComponent},
-    { path: 'contact', component: ContactComponent},
+    { path: 'contact', component: ContactComponent, children: ContactRoutes},
     { path: 'list', component: ConsviewComponent, children: ConsRoutes },
     { path: 'expenses', component: FixedExpensesComponent },
-    // { path: '', redirectTo: '/list', pathMatch: 'full'}
-
-  // { path: 'list', component: ClientListComponent },
-  // { path: 'expenses', component: FixedExpensesComponent },
-  // { path: '', component: PublicviewComponent, children: PublicRoutes },
-  // { path: 'consview', component: ConsviewComponent },
-  // { path: 'consview', component: ConsviewComponent, children: ConsRoutes },
-  // { path: '**', redirectTo: '/', pathMatch: 'full'},
-]
+    // { path: 'notes', component: ClientNotesComponent},
+];
 
 export const routing = RouterModule.forRoot(APP_ROUTES);

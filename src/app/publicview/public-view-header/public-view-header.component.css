@@ -3,6 +3,8 @@
   .navbar-default {
     padding:20px ;
     height: 100px;
+    color: #101b68;
+    justify-content: space-between;
   }
 
 .navbar-brand {
@@ -22,31 +24,30 @@
   }
 
   .navbar-nav {
-    font-size: 30px;
-    padding-left: 15%;
+    font-size: 24px;
+    /*padding-left: 15%;*/
+    color: #101b68 !important;
   }
-/*
-  .second-nav {
-    padding-left: 25%;
-  }
-
-  .third-nav {
-    padding-left: 25%;
-  }
-
+.navbar-nav li a {
+  color: #101b68 !important;
 }
-*/
+  .third-nav {
+    /*padding-left: 25%;*/
+    /*padding-right: 0;*/
+  }
+
 
 .login-icon {
   background-color: transparent;
   opacity: .5;
+  color: #101b68;
 }
 
 .login-icon:hover {
   opacity: 1;
 }
-
-@media (min-width: 701px {
+/*
+@media (min-width: 701px) {
 
   .navbar-default {
     height: 100px;
@@ -76,6 +77,4 @@
     padding-left: 10%;
   }
 
-
-
-}
+}*/

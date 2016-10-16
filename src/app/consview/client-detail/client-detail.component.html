@@ -7,34 +7,27 @@
   <div class="col-xs-12">
     <h1>{{selectedClient?.name}}</h1>
   </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <h4>{{selectedClient?.description}}</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <p>{{selectedClient?.location.lat}}</p>
+    </div>
+    <div class="col-xs-12">
+      <p>{{selectedClient?.location.long}}</p>
+    </div>
+  </div>
+
   <div class="col-xs-12">
-    <button class="btn btn-success" (click)="onAddToNotes()">Add New Note</button>
-    <button class="btn btn-primary">Edit</button>
-    <button class="btn btn-danger">Delete</button>
+    <button class="btn btn-success">Add New Note</button>
+    <button class="btn btn-primary" (click)="onEdit()">Edit Client</button>
+    <button class="btn btn-danger" (click)="onDelete()" >Delete Client</button>
+    <button class="btn btn-success" (click)="onComplete()">Project Complete</button>
   </div>
 </div>
 <hr>
-<div class="row">
-  <div class="col-xs-12">
-    <p>{{selectedClient?.desciption}}</p>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12">
-    <ul class="list-group">
-      Notes
-      <li class="list-group-item" *ngFor="let note of selectedClient?.notes">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-6">
-              {{note.name}}
-            </div>
-            <div class="col-xs-6">
-              {{note.amount}}
-            </div>
-          </div>
-        </div>
-       </li>
-    </ul>
-  </div>
-</div>
+<!-- <app-notes-detail></app-notes-detail> -->

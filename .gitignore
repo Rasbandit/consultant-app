@@ -33,4 +33,11 @@ testem.log
 Thumbs.db
 
 config.js
-instructor-code
+# instructor-code
+
+.idea
+server/**/*.js
+server/**/*.js.map
+client/**/*.js
+client/**/*.js.map
+/npm-debug.log

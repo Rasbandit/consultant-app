@@ -1,21 +1,25 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { Project } from '../project';
+import { ProjectService } from '../project.service';
 
 @Component({
   selector: 'app-project-item',
   templateUrl: './project-item.component.html',
-  styles: []
+  styles: [`
+        .resize {
+          width: 150px;
+          height: auto;
+        }
+    `],
 })
-export class ProjectItemComponent implements OnInit {
+export class ProjectItemComponent {
 
   @Input() project: Project;
-  projectId: number;
+  @Input() projectId: number;
 
-
-  constructor() { }
-
-  ngOnInit() {
+  log() {
+    console.log(this.project);
   }
 
 }

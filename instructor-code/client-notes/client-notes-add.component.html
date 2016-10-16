@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-xs-12">
+    <form [formGroup]="noteForm" id="client-notes-add" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-sm-5 form-group">
+          <label for="note-desc">Description</label>
+          <input
+            type="text"
+            id="note-desc"
+            required
+            class="form-control"
+            formControlName="desc">
+        </div>
+
+        <div class="col-sm-2 form-group">
+          <label for="note-amount">Amount</label>
+          <input
+            type="text"
+            id="note-amount"
+            required
+            class="form-control"
+            formControlName="amount">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <button
+          class="btn btn-success"
+          type="submit"
+          *ngIf="isAdd"
+          >Add</button>
+          <!-- [disabled]="!noteForm.valid" -->
+          <!-- <button class="btn btn-success" type="button" *ngIf="!isAdd">Edit</button> -->
+          <button class="btn btn-success" type="submit" *ngIf="!isAdd" >Save</button>
+          <!-- [disabled]="!noteForm.valid" -->
+          <button class="btn btn-danger" type="button" *ngIf="!isAdd" (click)="onRemoveNote(i)">Delete Note</button>
+          <button class="btn btn-primary" type="button" *ngIf="!isAdd" (click)="onClear()">Clear</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

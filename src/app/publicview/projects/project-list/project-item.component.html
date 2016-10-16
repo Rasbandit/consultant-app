@@ -1,4 +1,4 @@
-<a href="#" class="list-group-item clearfix">
+<a [routerLink]="[projectId]" class="list-group-item clearfix" routerLinkActive="active" (click)=log()>
   <div class="pull-left">
     <h4 class="list-group-item-heading">{{project.name}}</h4>
     <p class="list-group-item-text">{{project.description}}</p>
@@ -6,7 +6,7 @@
   <span class="pull-right">
     <img
       src="{{project.imagePath}}" alt="{{project.name}} Image"
-      class="img-responsive"
+      class="img-responsive resize"
       style="...">
   </span>
 </a>

@@ -1,52 +1,25 @@
-.background-img {
-  /*background-image: url("../../../../img/background/blueprints-compressed.jpg");*/
-  background-position: center center;
+.background-img img {
+  width: 100%;
   background-size: cover;
-  z-index: -1;
-  position: relative;
+  background-position: center center;
+  margin-top: -20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
+
+
 
 .contact-group {
-  background-color: black;
-  width: 600px;
-  color: white;
   font-size: 20px;
   opacity: .8;
-  padding-left: 25px;
-  margin-left: 25px;
+  margin: auto;
   z-index: 1;
   position: absolute;
-  top: 25px;
-}
-
-.email-group {
-
-  left: 25px;
-}
-
-.bid-group {
-  right: 25px;
-}
-
-.input-group {
-  width: 450px;
-  padding-top: 10px;
-  margin-left: 25px;
-  opacity: 1;
 }
 
 
-
-
-
-#contact-email-body {
-  width: 450px;
-  padding-top: 10px;
-  margin-left: 25px;
-  opacity: 1;
-}
-
-.submit-btn {
-  color: blue;
-  padding-top: 15px;
+.contact-header {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2vh;
 }

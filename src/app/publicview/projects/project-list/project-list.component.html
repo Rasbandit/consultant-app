@@ -1,3 +1,11 @@
-<p>
-  project-list works!
-</p>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <app-project-item
+        *ngFor="let project of projects; let j = index"
+        [project]="project"
+        [projectId]="j">
+      </app-project-item>
+    </ul>
+  </div>
+</div>

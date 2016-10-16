@@ -1,3 +1,4 @@
+
 .background-image {
   /*background-image: url('../../../../img/background/mg-background-photo1.jpg');*/
 
@@ -14,4 +15,10 @@
 
 .background-image img {
   width: 100%;
+  z-index: 0;
+}
+
+.home-intro {
+  z-index: 1;
+  position: absolute;
 }

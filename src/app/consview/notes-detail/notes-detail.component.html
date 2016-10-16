@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{selectedClient?.desc}}</h1>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <h4>{{selectedClient?.amount}}</h4>
+    </div>
+  </div>
+
+  <div class="col-xs-12">
+    <button class="btn btn-success">Add New Note</button>
+    <button class="btn btn-primary" (click)="onEdit()">Edit Client</button>
+    <button class="btn btn-danger" (click)="onDelete()">Delete Client</button>
+  </div>
+</div>
+<hr>
+<app-notes-list></app-notes-list>

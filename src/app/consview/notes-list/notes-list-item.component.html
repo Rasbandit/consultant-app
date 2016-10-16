@@ -1,0 +1,16 @@
+<a [routerLink]="[noteId]" class="list-group-item clearfix" routerLinkActive="active">
+  <!-- <div class="pull-left">
+    <h4 class="list-group-item-heading">{{client.name}}</h4>
+    <p class="list-group-item-text">{{client.description}}</p>
+  </div> -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
+        {{note.desc}}
+      </div>
+      <div class="col-xs-6">
+        {{note.amount}}
+      </div>
+    </div>
+  </div>
+</a>

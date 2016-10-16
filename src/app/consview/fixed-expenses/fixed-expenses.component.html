@@ -1,2 +1,57 @@
 <app-cons-view-header></app-cons-view-header>
-<p>Fixed Expenses</p>
+
+<h1>Fixed Expenses</h1>
+<form [formGroup]="expenseForm" (ngSubmit)="onSubmit()">
+    <div formGroupName="userData">
+        <div class="form-group">
+            <label for="flight">Flight</label>
+            <input type="number"
+                   class="form-control"
+                   id="flight"
+                   formControlName="flight"
+                   >
+        </div>
+        <div *ngIf="!expenseForm.controls['userData'].controls['flight'].valid">Please enter a number-only value for the flight</div>
+        <div class="form-group">
+            <label for="mileage">Mileage</label>
+            <input type="number"
+                   class="form-control"
+                   id="mileage"
+                   formControlName="mileage">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="rental">Rental</label>
+        <input type="number"
+               class="form-control"
+               id="rental"
+               formControlName="rental">
+    </div>
+    <div class="checkbox" *ngFor="let check of checkboxes">
+        <label>
+          <input type="checkbox" formControlName="checkbox" [value]="check">
+          {{check}}
+        </label>
+    </div>
+
+    <div formArrayName="hobbies">
+        <h3>Hobbies</h3>
+        <div class="form-group"
+        *ngFor="let hobby of expenseForm.controls['hobbies'].controls; let i = index">
+            <input type="text"
+                   class="form-control"
+                   formControlName="{{i}}">
+        </div>
+    </div>
+    <button type="button" class="btn btn-default" (click)="onAddHobby()">Add Hobby</button>
+    <button type="submit" class="btn btn-primary" [disabled]="!expenseForm.valid" (click)="reset()">Submit</button>
+    <button type="button" class="btn btn-danger" (click)="reset()">Clear</button>
+
+</form>
+
+
+<!-- <app-client-notes-add></app-client-notes-add> -->
+
+
+<!-- <app-login></app-login> -->

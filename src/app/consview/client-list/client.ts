@@ -1,7 +1,23 @@
-import { Note } from '../client-notes/note';
+import { Note } from '../note';
+
+//for location
+import { Location } from '../../shared/location';
+
+
 export class Client {
-  constructor(public name: string, public description: string, public imagePath: string, public notes: Note[]) {}
+  constructor(
+    public name: string,
+    public description: string,
+    public imagePath: string,
+    public notes: Note[],
+
+    //added for location
+    public location: Location[],
+    
+  ) {}
 }
 
 
-// , public notes: Note[]
+// export class Client {
+//   constructor(public name: string, public description: string, public imagePath: string, notes: Note[], public location: Location[]) {}
+// }
