@@ -1,0 +1,24 @@
+<app-public-view-header></app-public-view-header>
+
+<!-- <div class="background-img"> -->
+  <!-- <img src="../../../../img/background/contact-blue.jpg" alt=""> -->
+<div class="container">
+  <div class="contact-header">
+    <h2>Ready to get in touch?</h2>
+    <a class="btn btn-primary" [routerLink]="['/contact']">Email</a>
+    <a class="btn btn-primary" [routerLink]="['bid']">Request a Bid</a>
+  </div>
+  <div class="row contact-group">
+    <div class="col-md-6 ">
+      <app-contact-words></app-contact-words>
+    </div>
+    <div class="col-md-6 ">
+      <!-- <a class="btn btn-primary" [routerLink]="['/contact']">Email</a> -->
+      <!-- <a class="btn btn-primary" [routerLink]="['bid']">Request a Bid</a> -->
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+</div>
+
+<!-- </div> -->

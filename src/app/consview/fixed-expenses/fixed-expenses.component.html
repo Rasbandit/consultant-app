@@ -1,0 +1,66 @@
+<app-cons-view-header></app-cons-view-header>
+
+<h1>Fixed Expenses</h1>
+<div class="row">
+  <div class="col-md-5">
+    <h3>Current Expense Billing:</h3>
+    <ul class="list-group">
+      <li *ngFor="let expense of expenses; let i = index">{{expense[i]}}</li>
+    </ul>
+  </div>
+<!-- </div> -->
+  <div class="col-md-7">
+
+    <form [formGroup]="expenseForm" (ngSubmit)="onSubmit()">
+        <!-- <div formGroupName="userData"> -->
+            <div class="form-group">
+                <label for="flight">Flight</label>
+                <input type="number"
+                       class="form-control"
+                       id="flight"
+                       formControlName="flight">
+            </div>
+            <div
+              *ngIf="!expenseForm.controls['flight'].valid">
+              Please enter a number-only value for the flight</div>
+            <div class="form-group">
+                <label for="gas">Gas</label>
+                <input type="number"
+                       class="form-control"
+                       id="gas"
+                       formControlName="gas">
+            </div>
+            <div class="form-group">
+                <label for="rental">Rental</label>
+                <input type="number"
+                       class="form-control"
+                       id="rental"
+                       formControlName="rental">
+            </div>
+            <div class="form-group">
+                <label for="Travel">Travel</label>
+                <input type="number"
+                       class="form-control"
+                       id="travel"
+                       formControlName="travel">
+            </div>
+
+        <!-- </div> -->
+        <button
+              type="submit"
+              class="btn btn-primary"
+              [disabled]="!expenseForm.valid"
+              (click)="reset()">
+            Submit
+        </button>
+        <button
+              type="button"
+              class="btn btn-danger"
+              (click)="reset()">
+            Clear
+        </button>
+
+    </form>
+
+  </div>
+</div>

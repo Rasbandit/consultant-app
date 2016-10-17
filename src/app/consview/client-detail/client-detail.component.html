@@ -1,0 +1,58 @@
+<div class="row">
+  <div class="col-xs-12">
+    <img src="{{selectedClient?.imagePath}}" alt="" class="img-responsive">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{selectedClient?.name}}</h1>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <h4>{{selectedClient?.description}}</h4>
+    </div>
+  </div>
+  <!-- <div class="row" *ngFor="let note of selectedClient?.notes">
+    <div class="col-xs-12">
+      <p>{{note.desc}}</p>
+      <p>{{note.amount}}</p>
+    </div>
+  </div> -->
+  <!-- <div class="row">
+    <div class="col-xs-12">
+      <p>{{selectedClient?.location.lat}}</p>
+    </div>
+    <div class="col-xs-12">
+      <p>{{selectedClient?.location.long}}</p>
+    </div>
+  </div> -->
+
+  <div class="col-xs-12">
+    <button class="btn btn-success">Add New Note</button>
+    <button class="btn btn-primary" (click)="onEdit()">Edit Client</button>
+    <button class="btn btn-danger" (click)="onDelete()" >Delete Client</button>
+    <button class="btn btn-success" (click)="onComplete()">Project Complete</button>
+  </div>
+</div>
+<hr>
+<!-- <app-notes-detail *ngFor="let note of selectedClient?.notes; let i = index" [note]="note" [noteId]="i"></app-notes-detail> -->
+<!-- <app-notes-list *ngFor="let note of selectedClient?.notes; let i = index" [note]="note" [noteId]="i"></app-notes-list> -->
+
+  <!-- <div class="pull-left">
+    <h4 class="list-group-item-heading">{{client.name}}</h4>
+    <p class="list-group-item-text">{{client.description}}</p>
+  </div> -->
+  <!-- <div class="container" *ngFor="let note of selectedClient?.notes; let i = index" [note]="note" [noteId]="i"> -->
+  <div class="container" *ngFor="let note of selectedClient?.notes">
+    <!-- <a [routerLink]="[noteId]" class="list-group-item clearfix" routerLinkActive="active"> -->
+      <div class="row">
+        <div class="col-xs-6">
+          {{note.desc}}
+        </div>
+        <div class="col-xs-6">
+          {{note.amount}}
+        </div>
+      </div>
+    <!-- </a> -->
+  </div>

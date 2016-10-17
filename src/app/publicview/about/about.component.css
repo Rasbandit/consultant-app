@@ -1,0 +1,22 @@
+.about-container {
+  width: 95%;
+  margin: auto;
+}
+
+.about-cons-headshot label{
+  text-align: center;
+  margin: auto;
+}
+
+.about-cons-headshot img {
+  margin-right: 20px;
+}
+
+.about-cons-words {
+  width: 60%;
+  text-align: justify;
+}
+
+.about-cons-title {
+  text-align: center;
+}

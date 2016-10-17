@@ -1,0 +1,56 @@
+<div class="row">
+  <div class="col-xs-12">
+    <form [formGroup]="noteForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-xs-12">
+          <button type="submit" class="btn btn-success">Save</button> <!--[disabled]="!noteForm.valid"-->
+          <a class="btn btn-danger" (click)="onCancel()">Cancel</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <ul class="list-group" formArrayName="notes">
+            <div
+              class="row"
+              *ngFor="let note of noteForm.controls['notes'].controls; let i = index">
+              <div formGroupName="{{i}}">
+                <div class="col-sm-5">
+                  <input
+                    type="text"
+                    class="form-control"
+                    formControlName="desc">
+                </div>
+                <div class="col-sm-5">
+                  <input
+                    type="text"
+                    class="form-control"
+                    formControlName="amount">
+                </div>
+                <div class="col-sm-2">
+                  <button class="btn btn-danger" (click)="onRemoveNote(i)">X</button>
+                </div>
+              </div>
+
+              <br><br>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="form-group row">
+      <div class="col-md-5"><input type="text" class="form-control" #noteDesc></div>
+      <div class="col-md-5"><input type="text" class="form-control" #noteAmount></div>
+      <div class="col-md-2">
+        <button
+          type="button"
+          class="btn btn-primary"
+          (click)="onAddNote(noteDesc.value, noteAmount.value)">+</button>
+      </div>
+    </div>
+  </div>
+</div>

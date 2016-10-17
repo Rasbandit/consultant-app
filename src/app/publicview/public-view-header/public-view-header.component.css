@@ -1,0 +1,80 @@
+/*@media (min-width: 1001px) { */
+
+  .navbar-default {
+    padding:20px ;
+    height: 100px;
+    color: #101b68;
+    justify-content: space-between;
+  }
+
+.navbar-brand {
+  width:300px;
+  padding: 0 !important;
+}
+
+.navbar-brand img {
+  width:100%;
+}
+  .logo-nav {
+    /*height: 100px;*/
+    padding: 0px;
+    margin: 0px;
+    /*top: 0px;
+    left: 0px;*/
+  }
+
+  .navbar-nav {
+    font-size: 24px;
+    /*padding-left: 15%;*/
+    color: #101b68 !important;
+  }
+.navbar-nav li a {
+  color: #101b68 !important;
+}
+  .third-nav {
+    /*padding-left: 25%;*/
+    /*padding-right: 0;*/
+  }
+
+
+.login-icon {
+  background-color: transparent;
+  opacity: .5;
+  color: #101b68;
+}
+
+.login-icon:hover {
+  opacity: 1;
+}
+/*
+@media (min-width: 701px) {
+
+  .navbar-default {
+    height: 100px;
+  }
+
+  .logo-nav {
+    height: 100px;
+    padding: 0px;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+  }
+
+
+
+  .navbar-nav {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 5%;
+  }
+
+  .second-nav {
+    padding-left: 10%;
+  }
+
+  .third-nav {
+    padding-left: 10%;
+  }
+
+}*/

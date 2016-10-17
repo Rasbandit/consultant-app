@@ -1,0 +1,25 @@
+.background-img img {
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  margin-top: -20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+
+
+.contact-group {
+  font-size: 20px;
+  opacity: .8;
+  margin: auto;
+  z-index: 1;
+  position: absolute;
+}
+
+
+.contact-header {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2vh;
+}
