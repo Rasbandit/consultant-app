@@ -6,12 +6,7 @@ import { ProjectService } from '../project.service';
 @Component({
   selector: 'app-project-item',
   templateUrl: './project-item.component.html',
-  styles: [`
-        .resize {
-          width: 150px;
-          height: auto;
-        }
-    `],
+  styleUrls: ['./project-item.component.css'],
 })
 export class ProjectItemComponent {
 

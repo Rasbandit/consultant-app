@@ -1,0 +1,12 @@
+.resize {
+  width: 150px;
+  height: auto;
+}
+
+.pull-left {
+  width: calc(100% - 151px);
+}
+
+/*.list-group-item-text {
+  width: 75%;
+}*/

@@ -22,7 +22,7 @@ export class ClientListComponent implements OnInit {
     this.clientService.clientsChanged.subscribe(
       (clients: Client[]) => this.clients = clients
     );
-  
+
 
   }
   onStore() {

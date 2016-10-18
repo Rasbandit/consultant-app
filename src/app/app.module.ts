@@ -61,6 +61,10 @@ import { MapComponent } from './publicview/map/map.component';
 import { StaticMapComponent } from './publicview/map/static-map/static-map.component';
 import { ProjInStatesSmComponent } from './publicview/map/static-map/proj-in-states-sm/proj-in-states-sm.component';
 import { ProjectsMapComponent } from './publicview/map/static-map/projects-map/projects-map.component';
+import { GalleryComponent } from './publicview/projects/gallery/gallery.component';
+import { AboutBackgroundComponent } from './publicview/about/about-background/about-background.component';
+import { AboutConsComponent } from './publicview/about/about-cons/about-cons.component';
+import { AboutCompanyComponent } from './publicview/about/about-company/about-company.component';
 
 
 
@@ -101,6 +105,10 @@ import { ProjectsMapComponent } from './publicview/map/static-map/projects-map/p
     StaticMapComponent,
     ProjInStatesSmComponent,
     ProjectsMapComponent,
+    GalleryComponent,
+    AboutBackgroundComponent,
+    AboutConsComponent,
+    AboutCompanyComponent,
 
 
   ],

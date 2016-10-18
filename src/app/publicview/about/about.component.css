@@ -1,22 +1,48 @@
+.header{
+  opacity: .3;
+}
+
 .about-container {
-  width: 95%;
-  margin: auto;
+  width: 98%;
+  position: absolute;
 }
 
-.about-cons-headshot label{
-  text-align: center;
-  margin: auto;
+.lv-pano-img {
+  width: 650px;
+  height: auto;
+  position: fixed;
+  z-index: -5;
+  top: 2px;
+  left: 430px;
+  border-radius: 12px;
 }
 
-.about-cons-headshot img {
-  margin-right: 20px;
+img.challenger-img {
+  position: fixed;
+  z-index: -5;
+  top: 212px;
+  left: 480px;
+  /*opacity: .5;*/
+
 }
 
-.about-cons-words {
-  width: 60%;
-  text-align: justify;
+.ccgov-img {
+  width: 761px;
+  height: auto;
+  position: fixed;
+  z-index: -5;
+  top: 440px;
+  left: 380px;
+  /*opacity: .5;*/
+  border-radius: 12px;
 }
 
-.about-cons-title {
-  text-align: center;
+
+
+.google-static-states-outer-container {
+
+  width: 115%;
+  margin: -50px;
+  left: 0;
+  z-index: 0;
 }

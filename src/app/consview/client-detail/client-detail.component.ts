@@ -72,13 +72,13 @@ export class ClientDetailComponent implements OnInit, OnDestroy {
   //   // this.projectService.addProject(this.completeForm(this.selectedClient));
   //
   //   // original
-    // this.projectService.addProject(this.selectedClient);
+    this.projectService.addProject(this.selectedClient);
 
     // http request
-    this.clientService.onComplete(this.clientIndex).subscribe(
-      data => console.log(data),
-      error => console.log(error)
-    );
+    // this.clientService.onComplete(this.clientIndex).subscribe(
+    //   data => console.log(data),
+    //   error => console.log(error)
+    // );
   }
 
   private navigateBack() {

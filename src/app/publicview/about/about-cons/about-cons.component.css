@@ -1,0 +1,123 @@
+* {
+  z-index: 3;
+}
+
+.about-cons-header {
+  z-index: 40;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  color: #101b68;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h2 {
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  color: #101b68;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.about-cons-title {
+  text-align: center;
+  margin-left: 5vw;
+  position: absolute;
+  top: 51vh;
+  left: 2.6vw;
+  font-size: 1.15em;
+  color: burlywood;
+  background-color: transparent;
+  z-index: 4;
+}
+
+.nameplaque {
+  width: 14vw;
+  margin-left: 1vw;
+  position: absolute;
+  top: 23vw !important;
+  left: 5vw !important;
+  /*z-index: 0;*/
+  background-color: transparent;
+
+}
+
+.nameplaque-opaquer {
+  background-color: #663333;
+  opacity: .4;
+  position: absolute;
+  height: 14vh;
+  width: 12vw;
+  top: 48vh;
+  left: 7vw;
+}
+
+.picture-frame {
+  width: 300px;
+  margin-left: 1vw;
+  position: absolute;
+  top: 0 !important;
+  left: 1vw !important;
+
+}
+
+.picture {
+  margin-right: 20px;
+  margin-left: 5vw;
+  z-index: 0;
+  top: 4vw;
+  left: 1vw;
+  position: absolute;
+}
+
+.about-cons-words {
+  margin-top: 5px;
+  width: 38%;
+  /*text-align: center;*/
+  line-height: 40px;
+  font-size: 20px;
+  z-index: 4;
+
+}
+
+span.cons-left {
+  margin-left: 30px !important;
+}
+span.cons-leftish {
+  margin-left: 35px;
+}
+span.cons-midright {
+  margin-left: 60px;
+}
+span.cons-rightish {
+  margin-left: 70px;
+}
+span.cons-mid {
+  margin-left: 50px;
+}
+span.cons-midleft {
+  margin-left: 45px;
+}
+span.cons-right {
+  margin-left: 80px;
+}
+
+
+.family-img-container {
+  width: 42%;
+  height: auto;
+  margin: 0;
+  top: 48vh;
+  right: 0;
+  z-index: 1;
+  float: right;
+  position: absolute;
+}
+
+/*.family-img {
+  width:auto;
+}*/

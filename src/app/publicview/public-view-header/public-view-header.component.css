@@ -1,11 +1,10 @@
-/*@media (min-width: 1001px) { */
-
-  .navbar-default {
-    padding:20px ;
-    height: 100px;
-    color: #101b68;
-    justify-content: space-between;
-  }
+.navbar-default {
+  padding:20px ;
+  height: 100px;
+  color: #101b68;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
 
 .navbar-brand {
   width:300px;
@@ -15,27 +14,23 @@
 .navbar-brand img {
   width:100%;
 }
-  .logo-nav {
-    /*height: 100px;*/
-    padding: 0px;
-    margin: 0px;
-    /*top: 0px;
-    left: 0px;*/
-  }
+.logo-nav {
+  /*height: 100px;*/
+  padding: 0px;
+  margin: 0px;
+  /*top: 0px;
+  left: 0px;*/
+}
 
-  .navbar-nav {
-    font-size: 24px;
-    /*padding-left: 15%;*/
-    color: #101b68 !important;
-  }
+.navbar-nav {
+  font-size: 24px;
+  /*padding-left: 15%;*/
+  color: #101b68 !important;
+}
+
 .navbar-nav li a {
   color: #101b68 !important;
 }
-  .third-nav {
-    /*padding-left: 25%;*/
-    /*padding-right: 0;*/
-  }
-
 
 .login-icon {
   background-color: transparent;
@@ -46,6 +41,11 @@
 .login-icon:hover {
   opacity: 1;
 }
+
+/*#bs-example-navbar-collapse-1 {
+  z-index: 3;
+  
+}*/
 /*
 @media (min-width: 701px) {
 

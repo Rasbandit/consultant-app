@@ -1,4 +1,8 @@
 .project-detail-container {
   position: fixed;
-  right: 1vw;
+  right: .5vw;
+}
+
+.list-container {
+  margin-left: -15px;
 }

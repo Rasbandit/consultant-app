@@ -1,0 +1,36 @@
+.parent {
+    perspective: 1000px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+}
+
+.left-wall-container {
+
+}
+
+.left-wall-background {
+    transform: rotateY(64deg);
+    /*width: 600px;*/
+}
+
+.back-wall-container {
+
+}
+
+.back-wall-background {
+  /*width: 600px;*/
+}
+
+.right-wall-container {
+
+}
+
+.right-wall-background {
+    transform: rotateY(296deg);
+    /*width: 600px;*/
+}

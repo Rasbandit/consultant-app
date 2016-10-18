@@ -1,0 +1,76 @@
+h2 {
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  color: #101b68;
+}
+
+.about-cons-title {
+  margin-top: 63px;
+}
+
+.about-mg-words-container h2 {
+  text-align: center;
+  margin-left: 0;
+  width: 42%;
+}
+
+h3, h4 {
+  color: #101b68;
+  margin: auto;
+  display: inline-block;
+}
+
+h3 {
+
+  margin-right: 1vw;
+  margin-top: 1vw;
+}
+
+.about-mg-words-container {
+  /*text-align: justify;*/
+  width: 60%;
+  display: inline-block;
+}
+
+.about-mg-words {
+  margin-top: 5px;
+  margin-bottom: 53px;
+  width: 53%;
+  /*text-align: center;*/
+  line-height: 40px;
+  font-size: 20px;
+  z-index: 5;
+}
+
+span.cons-left {
+  margin-left: 30px !important;
+}
+span.cons-leftish {
+  margin-left: 35px;
+}
+span.cons-midright {
+  margin-left: 60px;
+}
+span.cons-rightish {
+  margin-left: 70px;
+}
+span.cons-mid {
+  margin-left: 50px;
+}
+span.cons-midleft {
+  margin-left: 45px;
+}
+span.cons-right {
+  margin-left: 80px;
+}
+
+/*.nv-icon {
+  height: auto;
+  width: 37px;
+}
+
+.ca-icon {
+  height: auto;
+  width: 37px;
+}*/
