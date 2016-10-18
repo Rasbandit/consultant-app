@@ -8,32 +8,30 @@
 }
 
 .lv-pano-img {
-  width: 650px;
+  width: 559px;
   height: auto;
   position: fixed;
   z-index: -5;
-  top: 2px;
-  left: 430px;
+  top: 0px;
+  left: 358px;
   border-radius: 12px;
 }
 
 img.challenger-img {
   position: fixed;
-  z-index: -5;
+  z-index: -6;
   top: 212px;
-  left: 480px;
-  /*opacity: .5;*/
+  left: 450px;
 
 }
 
 .ccgov-img {
-  width: 761px;
+  width: 690px;
   height: auto;
   position: fixed;
   z-index: -5;
-  top: 440px;
-  left: 380px;
-  /*opacity: .5;*/
+  top: 423px;
+  left: 400px;
   border-radius: 12px;
 }
 

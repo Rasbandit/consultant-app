@@ -1,4 +1,5 @@
 {
   "port": 3000,
-  "sessionSecret": "234rkjnvd0842jn90834kjndfv"
+  "sessionSecret": "234rkjnvd0842jn90834kjndfv",
+  "githubKey": "349cb8eda36fbcf9242a8c93a37f0e9235a1b24a"
 }

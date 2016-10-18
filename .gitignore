@@ -33,6 +33,7 @@ testem.log
 Thumbs.db
 
 config.js
+config.json
 instructor-code
 
 .idea

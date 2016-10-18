@@ -2,16 +2,9 @@
   z-index: 3;
 }
 
-.about-cons-header {
-  z-index: 40;
-  margin: auto;
-  margin-top: 10px;
-  text-align: center;
+h1 {
   color: #101b68;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  font-size: 30px;
-  font-weight: 400;
+  margin-left: 10px;
 }
 
 h2 {
@@ -21,38 +14,37 @@ h2 {
   color: #101b68;
   margin-bottom: 0;
   padding-bottom: 0;
+  z-index: 3;
 }
 
 .about-cons-title {
   text-align: center;
   margin-left: 5vw;
   position: absolute;
-  top: 51vh;
+  top: 48vh;
   left: 2.6vw;
   font-size: 1.15em;
-  color: burlywood;
+  color: silver;
   background-color: transparent;
   z-index: 4;
 }
 
 .nameplaque {
   width: 14vw;
+  height: 18vh;
   margin-left: 1vw;
   position: absolute;
-  top: 23vw !important;
+  top: 22.5vw !important;
   left: 5vw !important;
-  /*z-index: 0;*/
-  background-color: transparent;
-
 }
 
 .nameplaque-opaquer {
   background-color: #663333;
   opacity: .4;
   position: absolute;
-  height: 14vh;
+  height: 11vh;
   width: 12vw;
-  top: 48vh;
+  top: 46vh;
   left: 7vw;
 }
 
